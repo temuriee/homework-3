@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.mainContainer {
+  max-width: 1440px;
+  max-height: 348px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+.textContainer {
+  background-color: #f7f6f5;
+}
+.textContainer h1 {
+  color: #3a3845;
+  line-height: 32px;
+  letter-spacing: 4%;
+  font-family: ;
+  text-align: center;
+  font-weight: bold;
+}
+.imgContainer {
+}
+.mainText {
+}
+.secondText {
+}
+.Link {
+}
