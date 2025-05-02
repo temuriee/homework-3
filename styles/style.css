@@ -1,35 +1,97 @@
-* {
-  margin: 0;
-  padding: 0;
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
   box-sizing: border-box;
 }
-body {
-  display: flex;
-  justify-content: center;
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
 }
+
+/* 3. Enable keyword animations */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    interpolate-size: allow-keywords;
+  }
+}
+
+body {
+  /* 4. Add accessible line-height */
+  line-height: 1.5;
+  /* 5. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 8. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 9. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  10. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+/* !Code */
 .mainContainer {
   max-width: 1440px;
   max-height: 348px;
+  width: 100%;
   background-color: #ffffff;
   display: flex;
   justify-content: center;
 }
 .textContainer {
   background-color: #f7f6f5;
-}
-.textContainer h1 {
-  color: #3a3845;
-  line-height: 32px;
-  letter-spacing: 4%;
-  font-family: ;
-  text-align: center;
-  font-weight: bold;
-}
-.imgContainer {
+  width: 555px;
+  height: 347px;
 }
 .mainText {
+  line-height: 32px;
+  letter-spacing: 4%;
+  font-size: 28px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  width: 398px;
+  height: 64px;
+  text-transform: capitalize;
+  padding-top:64px; ;
+}
+.imgContainer {
+  width: 555px;
+  height: 348px;
+  
 }
 .secondText {
+  width: 389px;
+  height: 59px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
 }
 .Link {
+}
+a{
+  color: #3A3845;
 }
